@@ -32,7 +32,8 @@ int main(){
         x2 = x1;
         i = sqrt(-D)/(2*a);
     }
-
+    
+    //is imaginer
     if (i == 0){
         cout << "x1 : " << x1 << endl;
         cout << "x2 : " << x2 << endl;
