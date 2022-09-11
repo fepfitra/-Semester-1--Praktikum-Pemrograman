@@ -11,15 +11,21 @@ int main(){
     string bulan;
     cout << "Masukkan tanggal dan bulan (Contoh: 17 Agustus) : ";
     cin >> tanggal >> bulan;
+
     for_each(bulan.begin(), bulan.end(), [](char & c){
         c = tolower(c);
     });
 
+    if (tanggal < 1 || tanggal > 31){
+        cout << "WARNING! Input di luar jangkauan tanggal!" << endl;
+        return 0;
+    }
+
     string zodiak;
     if(bulan == "januari"){
-        if(tanggal>= 1 && tanggal<20){
+        if(tanggal<20){
             zodiak = "Capricorn";
-        }else(tanggal>= 20 && tanggal<=31);{
+        }else{
             zodiak = "Aquarius";
         }
     }else if(bulan == "februari"){
@@ -90,7 +96,7 @@ int main(){
         }
     }else{
         cout << "WARNING! Input tidak ditemukan!" << endl;
-        zodiak = "Error";
+        return 0;
     }
     cout << "Zodiaknya adalah : " << zodiak << endl;
 }
