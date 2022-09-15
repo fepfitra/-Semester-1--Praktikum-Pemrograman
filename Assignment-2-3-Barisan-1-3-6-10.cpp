@@ -13,4 +13,5 @@ int main(){
         un += i;
     }
     cout << "Suku ke-" << n << " adalah " << un;
+    return 0;
 }

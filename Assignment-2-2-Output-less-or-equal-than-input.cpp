@@ -7,4 +7,5 @@ int main(){
     cout << "Masukkan suatu bilangan (boleh desimal) : ";
     cin >> n;
     cout << n;
+    return;
 }
