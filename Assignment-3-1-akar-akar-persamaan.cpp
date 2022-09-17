@@ -39,6 +39,6 @@ int main(){
         cout << "x2 : " << x2 << endl;
     }else{
         cout << "x1 : " << x1 << " + " << i << "i" << endl;
-        cout << "x2 : " << x2 << " + " << i << "i" << endl;
+        cout << "x2 : " << x2 << " - " << i << "i" << endl;
     }
 }
