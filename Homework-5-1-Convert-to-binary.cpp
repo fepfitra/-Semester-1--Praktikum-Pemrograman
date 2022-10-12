@@ -5,12 +5,16 @@ using namespace std;
 int main(){
     cout  << "Insert a number : ";
 
-    int n;
+    int n, m, i, arr[16];
     cin >> n;
-
-    cout << "The result of the number " << n << " in binary is : ";
-    while(n > 0){
-        cout << n%2 << " ";
+    m = n;
+    for(i=0; 0<n; i++){
+        arr[i] = n%2;
         n/=2;
+    }
+
+    cout << "The result of the number " << m << " in binary is : ";
+    for(i--; i>=0; i--){
+        cout << arr[i] << " ";
     }
 }
