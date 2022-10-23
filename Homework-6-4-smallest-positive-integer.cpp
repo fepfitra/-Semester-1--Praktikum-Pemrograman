@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n, min, t=100;
+    int n, min;
     cout << "How many integers? ";
     cin >> n;
     int arr[n];
