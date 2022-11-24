@@ -1,7 +1,0 @@
-*.exe
-.vscode
-tempCodeRunnerFile.cpp
-tempCodeRunnerFile.exe
-.ccls-cache
-.replit
-.main
